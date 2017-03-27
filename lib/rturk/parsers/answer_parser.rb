@@ -17,15 +17,18 @@ module RTurk
           else
             value = child.inner_text
           end
-        end
 
-        if answer_hash.has_key?(key)
-          old_hash_value = answer_hash[key]
-          answer_hash[key] = []
-          answer_hash[key].push(old_hash_value)
-          answer_hash[key].push(value)
-        else
-          answer_hash[key] = value
+          next if value.nil?
+
+          if answer_hash.has_key?(key)
+            old_hash_value = answer_hash[key]
+            new_array = []
+            new_array.push(old_hash_value)
+            new_array.push(value)
+            answer_hash[key] = new_array.flatten
+          else
+            answer_hash[key] = value
+          end
         end
       end
       answer_hash

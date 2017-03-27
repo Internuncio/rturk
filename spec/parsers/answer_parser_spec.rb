@@ -9,15 +9,15 @@ describe RTurk::AnswerParser do
 &lt;QuestionFormAnswers xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionFormAnswers.xsd"&gt;
 &lt;Answer&gt;
 &lt;QuestionIdentifier&gt;tweet&lt;/QuestionIdentifier&gt;
-&lt;FreeText&gt;This is my tweet!&lt;/FreeText&gt;
+&lt;SelectionIdentifier&gt;This is my tweet!&lt;/SelectionIdentifier&gt;
 &lt;/Answer&gt;
 &lt;Answer&gt;
 &lt;QuestionIdentifier&gt;tweet&lt;/QuestionIdentifier&gt;
-&lt;FreeText&gt;12345678&lt;/FreeText&gt;
+&lt;SelectionIdentifier&gt;12345678&lt;/SelectionIdentifier&gt;
 &lt;/Answer&gt;
 &lt;Answer&gt;
 &lt;QuestionIdentifier&gt;Submit&lt;/QuestionIdentifier&gt;
-&lt;FreeText&gt;Submit&lt;/FreeText&gt;
+&lt;SelectionIdentifer&gt;Submit&lt;/SelectionIdentifier&gt;
 &lt;/Answer&gt;
 &lt;/QuestionFormAnswers&gt;
 XML
