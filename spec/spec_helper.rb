@@ -6,6 +6,7 @@ require 'rubygems'
 require 'spec'
 require 'yaml'
 require 'webmock'
+require 'byebug'
 include WebMock::API
 
 require 'rturk'
